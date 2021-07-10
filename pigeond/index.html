@@ -7,27 +7,43 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="topnav">
-            <div class="navbar">
-                <a class="active" href="#comments"><i class="fas fa-comments"></i><br>Comments</a>
-                <a href="#sound"><i class="fas fa-volume-up"></i><br>Sound</a>
-                <a href="#stamp"><i class="fas fa-stamp"></i><br>Stamp</a>
-                <a href="#microphone"><i class="fas fa-microphone"></i><br>Mic.</a>
-            </div>
-        </div>
+        <!--try_begin-->
+        <div class="tabs">
+            <input id="comment" type="radio" name="tab_item" checked>
+            <label class="tab_item" for="comment"><i class="fas fa-comments"></i><br>Comment</label>
+            <input id="sound" type="radio" name="tab_item">
+            <label class="tab_item" for="sound"><i class="fas fa-volume-up"></i><br>Sound</label>
+            <input id="stamp" type="radio" name="tab_item">
+            <label class="tab_item" for="stamp"><i class="fas fa-stamp"></i><br>Stamp</label>
+            <input id="microphone" type="radio" name="tab_item">
+            <label class="tab_item" for="microphone"><i class="fas fa-microphone"></i><br>Mic.</label>
+            
+            <div class="tab_content" id="comment_content">
+                <p>
+                    <label>Comment：<input type="text" id="nameText" class="nameText"></label>
+                    <input type="button" value="表示" id="checkButton">
+                </p>
         
-        <p>
-            <label>Comment：<input type="text" id="nameText" class="nameText"></label>
-            <input type="button" value="表示" id="checkButton">
-        </p>
-
-        <div id="modal" class="modal">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <p id="msg"></p>
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <p id="msg"></p>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="tab_content" id="sound_content">
+                サウンド
+            </div>
+            <div class="tab_content" id="stamp_content">
+                スタンプ
+            </div>
+            <div class="tab_content" id="microphone_content">
+                マイク
+            </div>
         </div>
+        <!--try_end-->
+
 
     </body>
     <script type="text/javascript" src="style.js"></script>
