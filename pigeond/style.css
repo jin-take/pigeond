@@ -105,7 +105,7 @@ body {
 #comment:checked ~ #comment_content,
 #sound:checked ~ #sound_content,
 #stamp:checked ~ #stamp_content,
-#microphone:checked ~ #microphone_content {
+#camera:checked ~ #camera_content {
     display: block;
 }
 
@@ -116,7 +116,4 @@ body {
 }
 
 
-.comment_content {
-    background: gray;
-}
 /*try_end*/

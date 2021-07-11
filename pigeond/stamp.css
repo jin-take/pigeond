@@ -1,0 +1,39 @@
+.insta {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+.insta > div {
+    position: relative;
+    width: calc(100%/3);
+    height: auto;
+    margin: 0;
+    overflow: hidden;
+}
+.insta > div:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+.insta > div > a {
+    position: absolute;
+    display: block;
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+}
+.insta > div > a img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: 100%;
+}
+
+
+
+
