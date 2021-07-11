@@ -71,3 +71,29 @@
     text-align: center;
 }
 
+
+#happiness {
+    width: calc(100%/2);
+    height: 50px;
+    background-color: pink;
+}
+#excite {
+    width:calc(100%/2);
+    height: 50px;
+    background-color: orange;
+}
+#laugh {
+    width:calc(100%/2);
+    height: 50px;
+    background:red;
+}
+#ovation {
+    width:calc(100%/2);
+    height: 50px;
+    background-color: yellow;
+}
+#discouragement {
+    width:calc(100%/2);
+    height: 50px;
+    background:skyblue;
+}

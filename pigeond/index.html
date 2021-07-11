@@ -7,6 +7,20 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="stamp.css">
         <link rel="stylesheet" href="sound.css">
+
+
+        <!--try-->
+        <style>
+            canvas, video{
+                border: 1px solid gray;
+            }
+            button{
+                width: 60px;
+                height: 60px;
+                border-radius:30px;
+            }
+        </style>
+        <!--try_end-->
     </head>
     <body>
         <!-- tabs -->
@@ -43,7 +57,7 @@
             <div class="tab_content" id="sound_content">
 
                 <!--happiness-->
-                <input type="button" value="喜び" id="happiness">
+                <input type="button" value="&#xf5b8; 喜び" id="happiness" class="fas">
                 <div id="modal-sound-happiness" class="modal-sound-happiness">
                     <div class="modal-sound-content">
                         <div class="modal-sound-body">
@@ -55,17 +69,17 @@
                 </div>
 
                 <!--excite-->
-                <input type="button" value="興奮" id="excite">
+                <input type="button" value="&#xf024; 興奮" id="excite" class="fas">
                 <div id="modal-sound-excite" class="modal-sound-excite">
                     <div class="modal-sound-content">
                         <div class="modal-sound-body">
-                            <audio src="./sound/excite/excite.mp3" controls></audio>
+                            <audio src="./sound/excite/excite01.m4a" controls></audio>
                         </div>
                     </div>
                 </div>
                 
                 <!--laugh-->
-                <input type="button" value="笑い" id="laugh">
+                <input type="button" value="&#xf581; 笑い" id="laugh" class="fas">
                 <div id="modal-sound-laugh" class="modal-sound-laugh">
                     <div class="modal-sound-content">
                         <div class="modal-sound-body">
@@ -75,18 +89,18 @@
                 </div>
 
                 <!--ovation-->
-                <input type="button" value="喝采" id="ovation">
+                <input type="button" value="&#xf4c2; 喝采" id="ovation" class="fas">
                 <div id="modal-sound-ovation" class="modal-sound-ovation">
                     <div class="modal-sound-content">
                         <div class="modal-sound-body">
-                            <audio src="./sound/ovation/applause.mp3" controls></audio>
-                            <audio src="./sound/ovation/ovation.mp3" controls></audio>
+                            <audio src="./sound/ovation/ovation01.m4a" controls></audio>
+                            <audio src="./sound/ovation/ovation02.mp3" controls></audio>
                         </div>
                     </div>
                 </div>
 
                 <!--discouragement-->
-                <input type="button" value="落胆" id="discouragement">
+                <input type="button" value="&#xf5b4; 落胆" id="discouragement" class="fas">
                 <div id="modal-sound-discouragement" class="modal-sound-discouragement">
                     <div class="modal-sound-content">
                         <div class="modal-sound-body">
@@ -126,7 +140,20 @@
             <!-- camera -->
             <!-- judge and analysis happiness from face-->
             <div class="tab_content" id="camera_content">
-                カメラ
+                <!-- カメラ -->
+                <video id="camera_video" width="auto" height="auto"></video>
+                <canvas id="picture"></canvas>
+                <form>
+                    <button type="button" id="shutter"></button>
+                </form>
+
+                <!--<audio id="se" preload="auto">
+                    <source src="./camera-shutter1.mp3" type="audio/mp3">
+                </audio>-->
+
+                <!--- 画像解読の結果を表示 消す--->
+                <h1 id="textBox"></h1>
+                <!-- <h2 id="textBox"></h2> -->
             </div>
         </div>
 
@@ -135,4 +162,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
+
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="CloudVision.js"></script>
+
 </html>

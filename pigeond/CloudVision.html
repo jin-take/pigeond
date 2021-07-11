@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>Image Analysis</title>
+
+    <!-- カメラstyle -->
+    <style>
+        canvas, video{
+            border: 1px solid gray;
+        }
+        button{
+            width: 60px;
+            height: 60px;
+            border-radius:30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- カメラ -->
+    <video id="camera_video" width="auto" height="auto"></video>
+    <canvas id="picture"></canvas>
+    <form>
+        <button type="button" id="shutter"></button>
+    </form>
+
+    <audio id="se" preload="auto">
+        <source src="camera-shutter1.mp3" type="audio/mp3">
+    </audio>
+
+    <!--- 画像解読の結果を表示 消す--->
+    <h1 id="textBox"></h1>
+    <!-- <h2 id="textBox"></h2> -->
+
+
+</body>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="CloudVision.js"></script>
+</html>
