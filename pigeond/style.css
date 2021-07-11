@@ -51,11 +51,22 @@ body {
     
 .modal-content{
     background-color: white;
-    width: 4000%;
+    width: 100%;
+    height: 80%;
     font-size: 500px;
 }
 
-/*try*/
+.modal-body {
+    text-align: center;
+}
+
+/*comments*/
+p#msg {
+    margin-top:0;
+}
+
+
+
 /*タブ切り替え全体のスタイル*/
 .tabs {
     margin-top: 50px;
@@ -116,4 +127,4 @@ body {
 }
 
 
-/*try_end*/
+

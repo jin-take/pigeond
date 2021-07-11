@@ -6,9 +6,10 @@
         <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="stamp.css">
+        <link rel="stylesheet" href="sound.css">
     </head>
     <body>
-        <!--try_begin-->
+        <!-- tabs -->
         <div class="tabs">
             <input id="comment" type="radio" name="tab_item" checked>
             <label class="tab_item" for="comment"><i class="fas fa-comments"></i><br>Comment</label>
@@ -19,6 +20,9 @@
             <input id="camera" type="radio" name="tab_item">
             <label class="tab_item" for="camera"><i class="fas fa-camera"></i><br>Camera</label>
             
+
+            <!--Contents-->
+            <!-- Comments, input forms -->
             <div class="tab_content" id="comment_content">
                 <p>
                     <label>Comment：<input type="text" id="nameText" class="nameText"></label>
@@ -33,9 +37,68 @@
                     </div>
                 </div>
             </div>
+
+
+            <!-- Select sounds -->
             <div class="tab_content" id="sound_content">
-                サウンド
+
+                <!--happiness-->
+                <input type="button" value="喜び" id="happiness">
+                <div id="modal-sound-happiness" class="modal-sound-happiness">
+                    <div class="modal-sound-content">
+                        <div class="modal-sound-body">
+                            <audio src="./sound/happy/buzz_inStudium.mp3" controls></audio>
+                            <audio src="./sound/happy/Cheers＿inStudium.mp3" controls></audio>
+                            <audio src="./sound/happy/scream.mp3" controls></audio>
+                        </div>
+                    </div>
+                </div>
+
+                <!--excite-->
+                <input type="button" value="興奮" id="excite">
+                <div id="modal-sound-excite" class="modal-sound-excite">
+                    <div class="modal-sound-content">
+                        <div class="modal-sound-body">
+                            <audio src="./sound/excite/excite.mp3" controls></audio>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--laugh-->
+                <input type="button" value="笑い" id="laugh">
+                <div id="modal-sound-laugh" class="modal-sound-laugh">
+                    <div class="modal-sound-content">
+                        <div class="modal-sound-body">
+                            <audio src="./sound/laugh/laugh.mp3" controls></audio>
+                        </div>
+                    </div>
+                </div>
+
+                <!--ovation-->
+                <input type="button" value="喝采" id="ovation">
+                <div id="modal-sound-ovation" class="modal-sound-ovation">
+                    <div class="modal-sound-content">
+                        <div class="modal-sound-body">
+                            <audio src="./sound/ovation/applause.mp3" controls></audio>
+                            <audio src="./sound/ovation/ovation.mp3" controls></audio>
+                        </div>
+                    </div>
+                </div>
+
+                <!--discouragement-->
+                <input type="button" value="落胆" id="discouragement">
+                <div id="modal-sound-discouragement" class="modal-sound-discouragement">
+                    <div class="modal-sound-content">
+                        <div class="modal-sound-body">
+                            <audio src="./sound/discouragement/discouragement.mp3" controls></audio>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
+
+
+            <!-- select stamps liken insta -->
             <div class="tab_content" id="stamp_content">
                 <div class="insta">
                     <div>
@@ -58,12 +121,14 @@
                     </div>
                 </div>
             </div>
+
+
+            <!-- camera -->
+            <!-- judge and analysis happiness from face-->
             <div class="tab_content" id="camera_content">
                 カメラ
             </div>
         </div>
-        <!--try_end-->
-
 
     </body>
     <script type="text/javascript" src="style.js"></script>
