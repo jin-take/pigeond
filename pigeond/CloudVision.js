@@ -151,21 +151,24 @@ function showResult(result){
         if(max <= 4){
             index = 5;
         }
+
+        //video.style.display ="none";
+
         //この配列の中身が返り値（emo[0], emo[1],,,）
         const emo = ['joy', 'sorrow', 'anger', 'surprise','headwear','No expression'];
         // $("#textBox").append(emo[index])　// 消す
         if(index === 0){
-            document.write('<img src="./emotionimg/joy.jpeg">')
+            var img = document.getElementById('demo').innerHTML = '<img src="emotionimg/joy.jpeg">';
         }else if(index === 1){
-            document.write('<img src="./emotionimg/sorrow.jpeg">')
+            var img = document.getElementById('demo').innerHTML = '<img src="./emotionimg/sorrow.jpeg">';
         }else if(index === 2){
-            document.write('<img src="./emotionimg/anger.jpg">')
+            var img = document.getElementById('demo').innerHTML = '<img src="./emotionimg/anger.jpg">';
         }else if(index === 3){
-            document.write('<img src="./emotionimg/suprise.jpeg">')
+            var img = document.getElementById('demo').innerHTML = '<img src="./emotionimg/suprise.jpeg">';
         }else if(index === 4){
-            document.write('<img src="./emotionimg/headwear.jpg">')
+            var img = document.getElementById('demo').innerHTML = '<img src="./emotionimg/headwear.jpg">';
         }else if(index === 5){
-            document.write('<img src="./emotionimg/Noex.png">')
+            var img = document.getElementById('demo').innerHTML = '<img src="./emotionimg/Noex.png">';
         }
     }
 }

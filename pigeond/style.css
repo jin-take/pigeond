@@ -4,6 +4,9 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
+    background:url("logo.jpeg") no-repeat;
+    background-position: bottom 30%;
+    background-size: contain;
 }
 
 .navbar {
@@ -125,6 +128,8 @@ p#msg {
     background-color: #5ab4bd;
     color: #fff;
 }
+
+
 
 
 
